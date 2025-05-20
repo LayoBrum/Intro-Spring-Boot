@@ -9,23 +9,23 @@ Este repositório contém um projeto de exemplo utilizando **Spring Boot**. O ob
 A estrutura do projeto é a seguinte:
 
 first-spring-app/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── brum/
-│   │   │           └── first_spring_app/
-│   │   │               ├── configuration/
-│   │   │               │   └── HelloConfiguration.java
-│   │   │               ├── controller/
-│   │   │               │   └── HelloWorldController.java
-│   │   │               ├── domain/
-│   │   │               │   └── User.java
-│   │   │               └── service/
-│   │   │                   └── HelloWorldService.java
-│   │   └── resources/
-│   │       └── application-dev.properties
-└── pom.xml
+├── src/ 
+│   ├── main/ 
+│   │   ├── java/ 
+│   │   │   └── com/ 
+│   │   │       └── brum/ 
+│   │   │           └── first_spring_app/ 
+│   │   │               ├── configuration/ 
+│   │   │               │   └── HelloConfiguration.java 
+│   │   │               ├── controller/ 
+│   │   │               │   └── HelloWorldController.java 
+│   │   │               ├── domain/ 
+│   │   │               │   └── User.java 
+│   │   │               └── service/ 
+│   │   │                   └── HelloWorldService.java 
+│   │   └── resources/ 
+│   │       └── application-dev.properties 
+└── pom.xml 
 
 ### Descrição dos Arquivos
 

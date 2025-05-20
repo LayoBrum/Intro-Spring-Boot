@@ -8,24 +8,27 @@ Este repositório contém um projeto de exemplo utilizando **Spring Boot**. O ob
 
 A estrutura do projeto é a seguinte:
 
-first-spring-app/
-├── src/ 
-│   ├── main/ 
-│   │   ├── java/ 
-│   │   │   └── com/ 
-│   │   │       └── brum/ 
-│   │   │           └── first_spring_app/ 
-│   │   │               ├── configuration/ 
-│   │   │               │   └── HelloConfiguration.java 
-│   │   │               ├── controller/ 
-│   │   │               │   └── HelloWorldController.java 
-│   │   │               ├── domain/ 
-│   │   │               │   └── User.java 
-│   │   │               └── service/ 
-│   │   │                   └── HelloWorldService.java 
-│   │   └── resources/ 
-│   │       └── application-dev.properties 
-└── pom.xml 
+├── first-spring-app/ # pasta principal do projeto
+│ ├── .mvn # pasta maven (onde ficam as configs do maven)
+│ │ └── # Arquivos Maven...
+│ ├── src # onde ficam os arquivos principais do projeto
+│ │ ├── main
+│ │ │ ├── java # pasta que contém as classes, a lógica do projeto
+│ │ │ │ ├── (...) # pasta com o nome do projeto
+│ │ │ │ │ └── FirstSpringAppApplication.java # arquivo com a classe principal (com o nome do projeto) 
+│ │ │ └── resources 
+│ │ │   ├── static # pasta que contem arquivos estáticos (css, js, sql etc)
+│ │ │   ├── templates # pasta que contem templates html
+│ │ │   └── application.properties # arquivo que contem configurações da aplicação spring
+│ │ └── test # pasta onde ficam os testes unitários do projeto, com as classes de teste
+│ ├── target # padrão do spring
+│ ├── .gitattributes # padrão do spring
+│ ├── .gitignore # padrão do spring
+│ ├── HELP.md # padrão do spring
+│ ├── mvnw # padrão do spring
+│ ├── mvnw.cmd # padrão do spring
+│ └── pom.xml # arquivo do maven com a listagem das dependências
+└── guia.txt # este arquivo guia
 
 ### Descrição dos Arquivos
 

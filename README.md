@@ -6,15 +6,15 @@ Este repositório contém um projeto de exemplo utilizando **Spring Boot**. O ob
 
 ## Estrutura do Projeto
 
-Para conferir a estrutura do projeto, veja o arquivo `guia.txt`. Lá é possível ver um desenho da estrutura com sua explicação.
+Para conferir a estrutura do projeto, veja o arquivo `guia.txt`. Lá é possível ver um desenho da estrutura com sua descrição.
 
-### Descrição dos Arquivos
+### Descrição dos Arquivos Principais
 
 - **HelloConfiguration.java**: Classe de configuração do Spring que define um bean que retorna a string "Hello World".
   
 - **HelloWorldController.java**: Controlador REST que mapeia requisições HTTP e utiliza o serviço para retornar mensagens personalizadas.
 
-- **User  .java**: Classe de domínio que representa um usuário com atributos como nome e email.
+- **User.java**: Classe de domínio que representa um usuário com atributos como nome e email.
 
 - **HelloWorldService.java**: Serviço que contém a lógica de negócio para retornar mensagens personalizadas.
 
@@ -41,8 +41,8 @@ Para baixar o repositório, siga os passos abaixo:
   mvn spring-boot:run
   ```
 
-Documentação
-Como Funciona
+## Documentação
+### Como Funciona
 Injeção de Dependência: O Spring Boot utiliza a injeção de dependência para gerenciar as instâncias das classes. O controlador HelloWorldController injeta o serviço HelloWorldService automaticamente.
 
 Controlador REST: O controlador escuta requisições na URL /hello-world. Ele possui dois métodos:

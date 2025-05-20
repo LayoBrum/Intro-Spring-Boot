@@ -31,32 +31,34 @@ Para baixar o repositório, siga os passos abaixo:
   git clone https://github.com/seu_usuario/first-spring-app.git
   ```
    
-2. **Navegue até a pasta do projeto:**:
+2. **Navegue até a pasta do projeto:**
   ```bash
   cd first-spring-app
   ```
 
-3. **Compile e execute o projeto:**:
+3. **Compile e execute o projeto:**
   ```bash
   mvn spring-boot:run
   ```
 
 ## Documentação
 ### Como Funciona
-Injeção de Dependência: O Spring Boot utiliza a injeção de dependência para gerenciar as instâncias das classes. O controlador HelloWorldController injeta o serviço HelloWorldService automaticamente.
+**Injeção de Dependência:** O Spring Boot utiliza a injeção de dependência para gerenciar as instâncias das classes. O controlador HelloWorldController injeta o serviço HelloWorldService automaticamente.
 
-Controlador REST: O controlador escuta requisições na URL /hello-world. Ele possui dois métodos:
+**Controlador REST:** O controlador escuta requisições na URL /hello-world. Ele possui dois métodos:
 
+```bash
 GET /hello-world: Retorna "Hello World Brum".
 POST /hello-world/{id}: Retorna "Hello World {nome}" onde {nome} é o nome enviado no corpo da requisição.
+```
 
-Exemplos de Uso:
-GET Request:
+### Exemplos de Uso:
+#### GET Request:
   ```bash
   curl -X GET http://localhost:8080/hello-world
   ```
 
-POST Request:
+#### POST Request:
   ```bash
   curl -X POST http://localhost:8080/hello-world/1 -H "Content-Type: application/json" -d '{"name": "Seu Nome", "email": "seuemail@example.com"}'
   ```

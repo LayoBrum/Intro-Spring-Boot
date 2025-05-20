@@ -1,0 +1,49 @@
+# Explicação de cada arquivo do projeto
+
+## Arquivos nativos do projeto
+
+├── first-spring-app/ # pasta principal do projeto
+│ ├── .mvn # pasta maven (onde ficam as configs do maven)
+│ │ └── # Arquivos Maven...
+│ ├── src # onde ficam os arquivos principais do projeto
+│ │ ├── main
+│ │ │ ├── java # pasta que contém as classes, a lógica do projeto
+│ │ │ │ ├── (...) # pasta com o nome do projeto
+│ │ │ │ │ └── FirstSpringAppApplication.java # arquivo com a classe principal (com o nome do projeto) 
+│ │ │ └── resources 
+│ │ │   ├── static # pasta que contem arquivos estáticos (css, js, sql etc)
+│ │ │   ├── templates # pasta que contem templates html
+│ │ │   └── application.properties # arquivo que contem configurações da aplicação spring
+│ │ └── test # pasta onde ficam os testes unitários do projeto, com as classes de teste
+│ ├── target # padrão do spring
+│ ├── .gitattributes # padrão do spring
+│ ├── .gitignore # padrão do spring
+│ ├── HELP.md # padrão do spring
+│ ├── mvnw # padrão do spring
+│ ├── mvnw.cmd # padrão do spring
+│ └── pom.xml # arquivo do maven com a listagem das dependências
+└── guia.txt # este arquivo guia
+
+## Arquivos criados por mim (os que não vieram por padrão) seguindo o curso de spring da Fernanda Kipper
+
+├── first-spring-app/ # pasta principal do projeto
+│ ├── (...) # outros arquivos
+│ ├── src # onde ficam os arquivos principais do projeto
+│ │ ├── main 
+│ │ │ ├── java # pasta que contém as classes, a lógica do projeto
+│ │ │ │ ├── (...) # pasta com o nome do projeto
+│ │ │ │ │ ├── configuration # pasta para armazenar as classes de configuração de instancias de classes
+│ │ │ │ │   └── HelloConfiguration.java # arquivos para definir beans (instancias de classes)
+│ │ │ │ │ ├── controller # pasta para armazenar os controllers (classes que recebem requisições http)
+│ │ │ │ │   └── HelloWorldController.java # arquivo para rodar um "Hello World"
+│ │ │ │ │ ├── domain # pasta do dominio da aplicação
+│ │ │ │ │   └── User.java # arquivo declarando uma classe Usuario
+│ │ │ │ │ ├── service # pasta para armazenar os serviços (classes que contém as regras de negócio e as regras definidas pelo Project Owner)
+│ │ │ │ │   └── HelloWorldService.java # arquivo que irá conter os POSTS e fazer a conexão com os controllers
+│ │ │ │ └──── (...) # arquivo da aplicação java
+│ │ │ └── resources # pasta que contém static, templates e configs
+│ │ │   ├── (...) # pastas static e templates e o arquivo .properties
+│ │ │   └── application-dev.properties # criando um novo ambiente de configuração chamado "dev" com o intuito de testar o projeto com outras configs
+│ │ └── (...) # outros arquivos
+│ └── (...) # outros arquivos
+└── guia.txt # este arquivo guia
